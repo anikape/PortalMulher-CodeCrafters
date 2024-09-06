@@ -1,0 +1,71 @@
+.container {
+  background-image: url('../../assets/bg.png');
+  /* background-repeat: no-repeat; */
+  /* height: 1050px; */
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.headerContainer {
+  background-image: url('../../assets/bgHeader.png');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 522px;
+  align-items: center;
+  width: 390px;
+}
+
+.headerContent {
+
+  width: 350px;
+  height: 355px;
+  border-radius: 15px;
+  border: 3px solid rgba(253, 238, 183, 0.50);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 2em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+.h1 {
+  font-size: clamp(20px, 4vw, 32px);
+  color: #7D6351;
+  font-weight: 800;
+  padding-top: 2em;
+
+}
+
+.paragraph {
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: #7D6351;
+  text-align: center;
+  font-weight: 800;
+
+}
+
+.ligacao{
+  width: 120px;
+height: 32px;
+border-radius: 5px;
+border: 1px solid #B08A70;
+background: rgba(250, 171, 167, 0.53);
+color: #7D6351;
+text-align: center;
+font-size: clamp(18px, 2.5vw, 24px);
+font-weight: 800;
+text-decoration: none;
+
+}
+
+.socio{
+  padding: 2em;
+}
