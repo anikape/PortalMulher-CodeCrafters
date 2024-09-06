@@ -47,7 +47,7 @@ const Home = () => {
           Centro de Operações da Polícia Civil
           Ligue 197{' '}
             <a className={style.ligacao} href="tel:+55197197">
-              Clique Aqui
+              Clique Aqui!
             </a>
           </p>
 
