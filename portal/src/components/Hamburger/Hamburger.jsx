@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import style from './hamburguer.module.css';
 import hambuguer from "../../assets/hamburguer.png";
 import female from '../../assets/female.png';
-import map from '../../assets/map.png';
+import mapa from '../../assets/mapa.svg';
 import fone from '../../assets/fone.png';
 import user from '../../assets/user.png';
 import home from '../../assets/home.png';
@@ -39,7 +39,7 @@ const HamburgerMenu = () => {
           </li> 
           <li>
             <Link to="/Mapa">
-              <img src={map} alt="Mapa" className={style.iconImage} />
+              <img src={mapa} alt="Mapa" className={style.iconImage} />
               Mapa
             </Link>
           </li>

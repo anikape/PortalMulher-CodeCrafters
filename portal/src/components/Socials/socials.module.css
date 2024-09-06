@@ -1,4 +1,17 @@
-.socialContainer{
-  display: flex;
+.socialContainer {
+  background-image: url('../../assets/bgsocial.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  gap: 10px;
+  width: 100%;
+  height: 378px;
   justify-content: space-around;
+  align-content: space-evenly;
+}
+
+.socialicon {
+  width: 72px;
+  height: 72px;
 }
