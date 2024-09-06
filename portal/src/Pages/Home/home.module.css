@@ -10,10 +10,27 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: 522px;
+ 
   align-items: center;
   width: 100%;
+  position: relative;
 }
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em; 
+  width: 100%;
+}
+
+.coracao {
+ 
+  width: 44px;
+  height: 35px;
+}
+
+
 
 .headerContent {
   display: flex;
@@ -26,21 +43,23 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 2em;
+  padding-top: 1em;
   gap: 1.5em;
 }
 
 .h1 {
   font-size: clamp(24px, 4vw, 32px);
+  font-family: Montserrat;
   width: 80%;
-  color: #7D6351;
-  font-weight: 800;
+  color: #1E1E1E;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
 
 .paragraph {
   font-size: clamp(18px, 2.5vw, 24px);
+  font-family: Montserrat;
   color: #D95876;
   text-align: center;
   font-weight: 800;
@@ -50,6 +69,7 @@
 
 .paragraph1 {
   color: #7D6351;
+  font-family: Montserrat;
   font-size: clamp(18px, 2vw, 32px);
   text-align: center;
   font-weight: 400;
@@ -57,20 +77,30 @@
   padding: 0 1em;
 }
 
-.socio {
-  padding: 0.5em;
-}
-
-.find{
-  padding-top: 2em;
+.find {
   display: flex;
   flex-direction: column;
+  padding-top: 1em;
 }
 
-.h2{
+.h2 {
   font-size: clamp(24px, 2vw, 36px);
+  font-family: Montserrat;
   text-align: center;
   font-weight: 700;
   color: var(--color-pink, #D95876);
-  
+
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 44px;
+  height: 35px;
+  padding-bottom: 1em;
 }

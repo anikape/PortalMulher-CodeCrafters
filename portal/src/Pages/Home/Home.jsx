@@ -17,9 +17,17 @@ const Home = () => {
   return (
     <div className={style.container}>
       <header className={style.headerContainer}>
-        <HamburgerMenu />
+        <div className={style.menu} >  
+
+        <img className={style.coracao} src={heart} alt="Logomarca do Portal da Mulher" />
+        <HamburgerMenu className={style.hamburgerMenu}  />
+        </div>
+   
+        
         <div className={style.headerContent}>
-          <img src={logo} alt="Logomarca do Portal da Mulher" />
+        
+
+          <img className={style.logo} src={logo} alt="Logomarca do Portal da Mulher" />
 
           <h1 className={style.h1}>Bem-vinda</h1>
 
@@ -49,7 +57,7 @@ const Home = () => {
       
 
         <section className={style.mainContent}>
-          <img src={heart} alt="Imagem de um coração" />
+          <img className={style.heart} src={heart} alt="Imagem de um coração" />
 
           <p className={style.paragraph}>Tudo em um só lugar!</p>
 
@@ -63,6 +71,12 @@ const Home = () => {
         <div className={style.socio}>
           <Social />
         </div>
+
+        <div className={style.help}>
+
+          </div>
+
+
       </main>
 
       <Footer />
