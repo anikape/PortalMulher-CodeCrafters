@@ -1,0 +1,17 @@
+.mapContainer{
+  background-image: url("../../assets/bg.png");
+  width: 390px;
+}
+
+.headerContainer {
+  background-image: url('../../assets/bgHeader.png');
+  background-repeat: no-repeat;
+  height: 291px;
+}
+
+.headerH1{
+   font-size: clamp(24px, 5vw, 32px);
+  color: #7D6351; 
+  font-weight: 800;
+  padding-top: 2em;
+}
