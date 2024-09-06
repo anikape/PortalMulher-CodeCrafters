@@ -1,61 +1,82 @@
+// Componente React
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './home.module.css';
 import HamburgerMenu from '../../components/Hamburger/Hamburger';
 import CustomButton from '../../components/Button/Button';
 import logo from '../../assets/logo.png';
-import female from '../../assets/female.png';
-import map from '../../assets/map.png';
-import fone from '../../assets/fone.png';
+import servico from '../../assets/servico.svg';
+import mapa from '../../assets/mapa.svg';
 import Footer from '../../components/Footer/Footer';
 import Social from '../../components/Socials/Social';
+import heart from '../../assets/heart.svg';
+import capacita from '../../assets/capacitacao.png'
+import servicoSocial from '../../assets/servicosocial.png'
 
 const Home = () => {
   return (
     <div className={style.container}>
       <header className={style.headerContainer}>
-        <HamburgerMenu />
+        <div className={style.menu} >  
+
+        <img className={style.coracao} src={heart} alt="Logomarca do Portal da Mulher" />
+        <HamburgerMenu className={style.hamburgerMenu}  />
+        </div>
+   
+        
         <div className={style.headerContent}>
-          <img src={logo} alt="Logomarca do Portal da Mulher" />
+        
+
+          <img className={style.logo} src={logo} alt="Logomarca do Portal da Mulher" />
+
+          <h1 className={style.h1}>Bem-vinda</h1>
+
+          <p className={style.paragraph}>Explore Conosco</p>
 
           <div className={style.buttons}>
-            <CustomButton imgSrc={female} text="Serviços" />
-            <CustomButton imgSrc={map} text="Mapa" to="/Mapa"  />
-            <CustomButton imgSrc={fone} text="Contato" />
+            <CustomButton imgSrc={servico} text="Serviços" />
+            <CustomButton imgSrc={mapa} text="Mapa" to="/Mapa" />
           </div>
         </div>
       </header>
 
-      <main>
-        <section className={style.mainContent}>
-          <h1 className={style.h1}>Precisa de ajuda?</h1>
+      <main>     
 
-          <p className={style.paragraph}>
-            Central de atendimento á mulher Ligue 180 ou{' '}
-            <a className={style.ligacao} href="tel:+55180180">
-              Clique Aqui
-            </a>
-          </p>
+        <section className={style.find}>
+          <h2 className={style.h2}>Aqui você encontra</h2>
+          <Link to="/destino">
+        <img src={capacita} alt="Logo" />
+      </Link>
 
-          <p className={style.paragraph}>
-            Centro de Operações da Polícia Militar Ligue 190 ou{' '}
-            <a className={style.ligacao} href="tel:+55190190">
-              Clique Aqui
-            </a>
-          </p>
+      <Link to="/destino">
+        <img src={servicoSocial} alt="Logo" />
+      </Link>
 
-          <p className={style.paragraph}>
-          Centro de Operações da Polícia Civil
-          Ligue 197{' '}
-            <a className={style.ligacao} href="tel:+55197197">
-              Clique Aqui!
-            </a>
-          </p>
-
-        <div className={style.socio} >
-          <Social />
-          </div>
-          
         </section>
+
+      
+
+        <section className={style.mainContent}>
+          <img className={style.heart} src={heart} alt="Imagem de um coração" />
+
+          <p className={style.paragraph}>Tudo em um só lugar!</p>
+
+          <p className={style.paragraph1}>
+            Uma iniciativa da CodeCrafters criada para centralizar serviços
+            disponíveis para as mulheres em Pernambuco. Aqui, você encontra
+            saúde, assistência jurídica, educação e muito mais.
+          </p>
+        </section>
+
+        <div className={style.socio}>
+          <Social />
+        </div>
+
+        <div className={style.help}>
+
+          </div>
+
+
       </main>
 
       <Footer />
