@@ -17,6 +17,7 @@ import Sos from "../../components/Sos/Sos";
 import Help from "../../components/Help/Help";
 import { Menu } from "../../components/Menu";
 
+
 const Home = () => {
   return (
     <>
@@ -79,6 +80,7 @@ const Home = () => {
         <div className={style.socio}>
           <Social />
         </div>
+      
 
         <Help />
 
