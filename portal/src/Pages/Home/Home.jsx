@@ -1,50 +1,53 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import style from './home.module.css';
-import HamburgerMenu from '../../components/Hamburger/Hamburger';
-import CustomButton from '../../components/Button/Button';
-import logo from '../../assets/logo.png';
-import servico from '../../assets/servico.svg';
-import mapa from '../../assets/mapa.svg';
-import Footer from '../../components/Footer/Footer';
-import Social from '../../components/Socials/Social';
-import heart from '../../assets/heart.svg';
-import capacita from '../../assets/capacitacao.png';
-import servicoSocial from '../../assets/servicosocial.png';
-import sos2 from '../../assets/sos2.png';
-import sos from '../../assets/sos.png'
-import Sos from '../../components/Sos/Sos';
-import Help from '../../components/Help/Help';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import style from "./home.module.css";
+import HamburgerMenu from "../../components/Hamburger/Hamburger";
+import CustomButton from "../../components/Button/Button";
+import logo from "../../assets/logo.svg";
+import servico from "../../assets/servico.svg";
+import mapa from "../../assets/mapa.svg";
+import Footer from "../../components/Footer/Footer";
+import Social from "../../components/Socials/Social";
+import heart from "../../assets/heart.svg";
+import capacita from "../../assets/capacitacao.png";
+import servicoSocial from "../../assets/servicosocial.png";
+import sos2 from "../../assets/sos2.png";
+import sos from "../../assets/sos.png";
+import Sos from "../../components/Sos/Sos";
+import Help from "../../components/Help/Help";
+import { Menu } from "../../components/Menu";
 
 const Home = () => {
- 
-
   return (
-    <div className={style.container}>
-      <header className={style.headerContainer}>
-        <div className={style.menu}>
-          <img
-            className={style.coracao}
-            src={heart}
-            alt="Logomarca do Portal da Mulher"
-          />
-          <HamburgerMenu className={style.hamburgerMenu} />
-        </div>
+    <>
+      <header className={style.header}>
+        <div className={style.container}>
+          <div className={style.navbar}>
+            <img
+              className={style.coracao}
+              src={heart}
+              alt="Logomarca do Portal da Mulher"
+            />
+            <Menu />
+            <HamburgerMenu className={style.hamburgerMenu} />
+          </div>
+          <div className={style.headerContent}>
+            <div>
+              <img
+                className={style.logo}
+                src={logo}
+                alt="Logomarca do Portal da Mulher"
+              />
+            </div>
 
-        <div className={style.headerContent}>
-          <img
-            className={style.logo}
-            src={logo}
-            alt="Logomarca do Portal da Mulher"
-          />
+            <h1 className={style.h1}>Bem-vinda</h1>
 
-          <h1 className={style.h1}>Bem-vinda</h1>
+            <p className={style.paragraph}>Explore Conosco</p>
 
-          <p className={style.paragraph}>Explore Conosco</p>
-
-          <div className={style.buttons}>
-            <CustomButton imgSrc={servico} text="Serviços" />
-            <CustomButton imgSrc={mapa} text="Mapa" to="/Mapa" />
+            <div className={style.buttons}>
+              <CustomButton imgSrc={servico} text="Serviços" />
+              <CustomButton imgSrc={mapa} text="Mapa" to="/Mapa" />
+            </div>
           </div>
         </div>
       </header>
@@ -79,12 +82,12 @@ const Home = () => {
 
         <Help />
 
-          <Sos />
-        
+        <Sos />
       </main>
 
       <Footer />
-    </div>
+      {/* </div> */}
+    </>
   );
 };
 
