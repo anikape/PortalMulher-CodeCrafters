@@ -94,7 +94,10 @@
 .find {
   display: flex;
   flex-direction: column;
+  align-content: center;
   padding-top: 1em;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .h2 {
