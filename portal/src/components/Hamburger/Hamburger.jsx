@@ -7,6 +7,7 @@ import mapa from '../../assets/mapa.svg';
 import fone from '../../assets/fone.png';
 import user from '../../assets/user.png';
 import home from '../../assets/home.png';
+import adress from "../../assets/Address.png"
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,14 +33,14 @@ const HamburgerMenu = () => {
             </Link>
           </li> 
           <li>
-            <Link to="/services">
+            <Link to="/Servicos">
               <img src={female} alt="Serviços" className={style.iconImage} />
               Serviços
             </Link>
           </li> 
           <li>
             <Link to="/Mapa">
-              <img src={mapa} alt="Mapa" className={style.iconImage} />
+              <img src={adress} alt="Mapa" className={style.iconImage} />
               Mapa
             </Link>
           </li>

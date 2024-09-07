@@ -1,5 +1,6 @@
 .container {
- width: 100%;
+  width: 960px;
+ max-width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #FEF3ED;
@@ -105,54 +106,4 @@
   height: 35px;
   padding-bottom: 1em;
 }
-.help {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.numbersDiv {
-  display: flex;
-  align-items: center; /* Alinha verticalmente os itens no centro */
-  gap: 10px; /* Espaço entre os elementos, ajuste conforme necessário */
-}
-
-.numbers {
-  color: var(--dark-10, #1E1E1E);
-  text-align: center;
-  font-family: Montserrat;
-  font-size: clamp(40px, 5vw, 60px);
-  font-weight: 700;
-}
-
-.numberSpam {
-  color: var(--dark-10, #1E1E1E);
-  font-family: Montserrat;
-  font-size: clamp(18px, 2vw, 24px);
-  font-weight: 400;
-  text-decoration-line: underline;
-  width: 206px; /* Ajuste conforme necessário */
-}
-
-.fixedButton {
-  position: fixed;
-  bottom: 20px; /* Valor padrão quando não está perto do footer */
-  right: 20px; /* Ajuste conforme necessário */
-  z-index: 1000; /* Garante que o botão esteja acima dos outros elementos */
-  transition: bottom 0.3s ease; /* Suaviza a transição do botão */
-}
-
-.fixedButton {
-  bottom: 20px; /* Valor padrão quando não está perto do footer */
-}
-
-.fixedButton {
-  position: fixed;
-  bottom: 20px; /* Valor padrão */
-  right: 20px; /* Ajuste conforme necessário */
-  z-index: 1000; /* Garante que o botão esteja acima dos outros elementos */
-  transition: bottom 0.3s ease; /* Suaviza a transição do botão */
-}
-
-
 
