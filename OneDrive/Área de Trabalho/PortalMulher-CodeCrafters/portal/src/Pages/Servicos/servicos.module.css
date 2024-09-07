@@ -1,0 +1,55 @@
+.container {
+  background-color: #FEF3ED;
+  width: 960px;
+  max-width: 100%;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12rem;
+}
+
+.imgLocal {
+  width: 40px;
+  height: 40px;
+}
+
+.h1 {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.paragraph {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-family: Montserrat;
+  color: #D95876;
+  text-align: center;
+  font-weight: 800;
+  width: 100%;
+  margin: 0;
+}
+
+.paragraph1 {
+  color: #1E1E1E;
+  font-family: Montserrat;
+  font-size: clamp(18px, 2vw, 32px);
+  text-align: center;
+  font-weight: 400;
+  width: 90%;
+  padding: 0 1em;
+}

@@ -1,0 +1,72 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0 3em 0;
+  gap: 24px;
+  
+  background: linear-gradient(180deg, #FEF3ED 0%, #FFE3BD 50%, #FF8B8A 100%);
+}
+
+
+.help h2 {
+  color: #1e1e1e;
+  text-align: center;
+  font-family:" Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alert p {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 20ch;
+}
+
+.numbersDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.numbers {
+  color: var(--dark-10, #1e1e1e);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 700;
+}
+
+.numberSpam {
+  color: var(--dark-10, #1e1e1e);
+  font-family: Montserrat;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  text-decoration-line: underline;
+  /* width: 206px;  */
+  /* Ajuste conforme necessário */
+}
+
+@media (max-width: 610px) {
+  .numbersDiv {
+    width: 70%;
+    height: auto;
+  }
+  
+}

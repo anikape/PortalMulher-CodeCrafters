@@ -1,0 +1,20 @@
+
+.customButton {
+  box-sizing: border-box; 
+  width: 128px;
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.5em;
+  text-decoration: none;
+  border-radius: 8px;
+border: 1px solid var(--color-pink, #D95876);
+background: var(--bg-light-orange, #FEF3ED);
+  color: var(--color-pink, #D95876);
+  
+  
+}
+
+
