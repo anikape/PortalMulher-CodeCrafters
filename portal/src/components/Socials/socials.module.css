@@ -9,9 +9,16 @@
   height: 378px;
   justify-content: space-around;
   align-content: space-evenly;
+  margin-top: 48px;
 }
 
 .socialicon {
   width: 72px;
   height: 72px;
+}
+
+@media (max-width: 610px) {
+  .socialContainer {
+    background-size: cover;
+  }
 }

@@ -1,11 +1,10 @@
 // src/components/Social.js
-import React from 'react';
-import style from './socials.module.css'
-import insta from '../../assets/insta.png';
-import linkedin from '../../assets/linkedin.png';
-import email from '../../assets/email.png';
-import git from '../../assets/git.png'
-
+import React from "react";
+import style from "./socials.module.css";
+import insta from "../../assets/insta.png";
+import linkedin from "../../assets/linkedin.png";
+import email from "../../assets/email.png";
+import git from "../../assets/git.png";
 
 const Social = () => {
   return (
