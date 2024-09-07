@@ -74,7 +74,7 @@
 }
 
 /* Media Query para telas pequenas */
-@media (max-width: 390px) {
+@media (max-width: 600px) {
   .icon {
     display: block; /* Ícone visível em telas pequenas */
   }
@@ -83,4 +83,15 @@
   .menu {
     display: none;
   }
+}
+
+@media (min-width: 601px){
+  .icon {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
 }

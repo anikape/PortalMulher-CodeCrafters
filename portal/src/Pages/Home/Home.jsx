@@ -12,41 +12,12 @@ import heart from '../../assets/heart.svg';
 import capacita from '../../assets/capacitacao.png';
 import servicoSocial from '../../assets/servicosocial.png';
 import sos2 from '../../assets/sos2.png';
+import sos from '../../assets/sos.png'
+import Sos from '../../components/Sos/Sos';
+import Help from '../../components/Help/Help';
 
 const Home = () => {
-  const [isButtonFixed, setIsButtonFixed] = useState(true);
-  const footerRef = useRef(null);
-  const buttonRef = useRef(null);
-
-  const handleScroll = () => {
-    if (footerRef.current && buttonRef.current) {
-      const footerTop = footerRef.current.getBoundingClientRect().top;
-      const buttonHeight = buttonRef.current.offsetHeight;
-      const windowHeight = window.innerHeight;
-
-      // Se o footer está acima da janela de visualização
-      if (footerTop < windowHeight) {
-        setIsButtonFixed(true);
-        buttonRef.current.style.bottom = `${Math.max(20, footerTop - buttonHeight)}px`;
-      } else {
-        setIsButtonFixed(false);
-        buttonRef.current.style.bottom = '20px'; // Valor padrão quando o footer não está visível
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Para definir a posição inicial
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleClick = () => {
-    window.location.href = 'tel:190'; // Faz a chamada quando o link é clicado
-  };
+ 
 
   return (
     <div className={style.container}>
@@ -106,40 +77,13 @@ const Home = () => {
           <Social />
         </div>
 
-        <div className={style.help}>
-          <h2>Precisa de ajuda?</h2>
-          <div className={style.numbersDiv}>
-            <p className={style.numbers}>180</p>
-            <span className={style.numberSpam}>
-              Central de
-              <br />
-              atendimento à mulher
-            </span>
-          </div>
-          <div className={style.numbersDiv}>
-            <p className={style.numbers}>190</p>
-            <span className={style.numberSpam}>
-              Central de            
-              Operações <br /> da Polícia Militar
-            </span>
-          </div>
+        <Help />
 
-          <div className={style.numbersDiv}>
-            <p className={style.numbers}>180</p>
-            <span className={style.numberSpam}>
-              Central de
-             
-              Operações <br /> da Polícia Civil
-            </span>
-          </div>
-
-          <Link to="#" onClick={handleClick} className={style.fixedButton} ref={buttonRef}>
-            <img src={sos2} alt="Ligar para emergência" />
-          </Link>
-        </div>
+          <Sos />
+        
       </main>
 
-      <Footer ref={footerRef} />
+      <Footer />
     </div>
   );
 };
