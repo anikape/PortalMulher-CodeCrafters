@@ -1,19 +1,18 @@
-
 .fixedButton {
   position: sticky;
-  bottom: 20px; /* Valor padrão quando não está perto do footer */
+  bottom: 60px; /* Valor padrão quando não está perto do footer */
   right: 20px; /* Ajuste conforme necessário */
   z-index: 1000; /* Garante que o botão esteja acima dos outros elementos */
   transition: bottom 0.3s ease; /* Suaviza a transição do botão */
 }
 
 .fixedButton {
-  bottom: 20px; /* Valor padrão quando não está perto do footer */
+  bottom: 60px; /* Valor padrão quando não está perto do footer */
 }
 
 .fixedButton {
   position: fixed;
-  bottom: 20px; /* Valor padrão */
+  bottom: 60px; /* Valor padrão */
   right: 20px; /* Ajuste conforme necessário */
   z-index: 1000; /* Garante que o botão esteja acima dos outros elementos */
   transition: bottom 0.3s ease; /* Suaviza a transição do botão */

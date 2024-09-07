@@ -41,11 +41,15 @@
   height: 35px;
 }
 
-.headerContent {
+.headerContent.callToAction {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.callToAction {
+  display: none;
 }
 
 .buttons {
@@ -59,7 +63,7 @@
 .h1 {
   font-size: clamp(24px, 4vw, 32px);
   font-family: Montserrat;
-  width: 80%;
+  /* width: 80%; */
   color: #1e1e1e;
   font-weight: 700;
   line-height: 1.2;
@@ -113,6 +117,143 @@
   padding-bottom: 1em;
 }
 
+.sectionBox,
+.redesCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.redesCard {
+  margin: 40px 0;
+  /* max-width: 873px; */
+  background-image: url(../../assets/rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 40px 0;
+}
+
+.redesContent {
+  padding: 40px 0;
+}
+
+.redesContent {
+  max-width: 873px;
+  width: 100%;
+  max-height: 655px;
+}
+.redesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 1rem;
+  margin-bottom: 32px;
+}
+
+.redesTitle {
+  color: #d95876;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.redesFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.redesH2 {
+  color: #d95876;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.redesIcons {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.redesParagraph {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 40ch;
+}
+
+.boxContent {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  bottom: -15px;
+}
+
+.boxContentText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.boxContentText h2 {
+  color: #d95876;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+
+.boxContentText p {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 40ch;
+}
+
+.invert {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  bottom: -28px;
+}
+
+.mainServices {
+  display: none;
+}
+
+.helpContent {
+  padding: 52px 0;
+}
+
 @media (max-width: 610px) {
   .container {
     width: 100%;
@@ -129,5 +270,17 @@
     display: block;
   }
 
- 
+  .callToAction {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 31px 0;
+  }
+
+  .redesCard,
+  .sectionBox {
+    display: none;
+  }
+  .mainServices {
+    display: block;
+  }
 }

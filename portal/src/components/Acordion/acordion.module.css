@@ -1,10 +1,10 @@
 .accordion {
   width: 100%;
-  max-width: 600px;
+
   margin: 0 auto;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #FEF3ED;
+  background-color: #fef3ed;
 }
 
 .accordionItem {
@@ -16,7 +16,7 @@
 }
 
 .accordionTitle {
-  background-color: #F7C9A6;
+  background-color: #f7c9a6;
   padding: 15px;
   cursor: pointer;
   display: flex;
@@ -28,7 +28,7 @@
 
 .accordionContent {
   padding: 15px;
-  background-color: #FEF3ED;
+  background-color: #fef3ed;
 }
 
 .accordionArrow {
@@ -38,7 +38,7 @@
 .subAccordion {
   padding-left: 20px;
   border-left: 2px solid #ddd;
-  background-color: #FEF3ED;
+  background-color: #fef3ed;
 }
 
 .accordionSubItem {
@@ -50,7 +50,7 @@
 }
 
 .accordionSubTitle {
-  background-color: #F7C9A6;
+  background-color: #f7c9a6;
   padding: 10px;
   cursor: pointer;
   display: flex;
@@ -62,7 +62,7 @@
 
 .accordionSubContent {
   padding: 15px;
-  background-color: #FEF3ED;
+  background-color: #fef3ed;
   border-top: 1px solid #ddd;
   font-size: clamp(14px, 1.2vw, 16px);
   line-height: 1.6;
@@ -82,6 +82,6 @@
 }
 
 .accordionSubContent a {
-  color: #D95876;
+  color: #d95876;
   text-decoration: underline;
 }
