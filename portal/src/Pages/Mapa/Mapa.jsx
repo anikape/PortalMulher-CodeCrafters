@@ -1,21 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import style from './mapa.module.css';
-import HamburgerMenu from '../../components/Hamburger/Hamburger';
-import MapWithDirections from '../../components/MapWithDirections'; // Importando o componente de mapa
-import sos2 from '../../assets/sos2.png';
-import heart from '../../assets/heart.svg';
-import servico from '../../assets/servico.svg';
-import mapa from '../../assets/mapa.svg';
-import Footer from '../../components/Footer/Footer';
-import CustomButton from '../../components/Button/Button';
-import local from '../../assets/local.svg';
-import Sos from '../../components/Sos/Sos';
-import Help from '../../components/Help/Help';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import style from "./mapa.module.css";
+import HamburgerMenu from "../../components/Hamburger/Hamburger";
+import MapWithDirections from "../../components/MapWithDirections"; // Importando o componente de mapa
+import sos2 from "../../assets/sos2.png";
+import heart from "../../assets/heart.svg";
+import servico from "../../assets/servico.svg";
+import mapa from "../../assets/mapa.svg";
+import Footer from "../../components/Footer/Footer";
+import CustomButton from "../../components/Button/Button";
+import local from "../../assets/local.svg";
+import Sos from "../../components/Sos/Sos";
+import Help from "../../components/Help/Help";
 
 const Mapa = () => {
-  
-
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
@@ -28,11 +26,11 @@ const Mapa = () => {
           });
         },
         (error) => {
-          console.error('Error getting geolocation: ', error);
-        },
+          console.error("Error getting geolocation: ", error);
+        }
       );
     } else {
-      console.error('Geolocation is not supported by this browser.');
+      console.error("Geolocation is not supported by this browser.");
     }
   }, []);
 
@@ -65,20 +63,24 @@ const Mapa = () => {
       </div>
 
       <div className={style.info}>
-        <img className={style.imgLocal} src={local} alt="Ícone de um ponto de localização em mapas" />
+        <img
+          className={style.imgLocal}
+          src={local}
+          alt="Ícone de um ponto de localização em mapas"
+        />
 
         <p className={style.paragraph}>Tudo em um só lugar!</p>
 
         <p className={style.paragraph1}>
-        Encontre os serviços mais próximos de você com facilidade! Use o mapa para localizar centros de apoio, saúde, assistência jurídica e outros serviços disponíveis para mulheres em Pernambuco.
+          Encontre os serviços mais próximos de você com facilidade! Use o mapa
+          para localizar centros de apoio, saúde, assistência jurídica e outros
+          serviços disponíveis para mulheres em Pernambuco.
         </p>
       </div>
 
       <Help />
 
-        <Sos />
-
-      
+      <Sos />
 
       <Footer />
     </div>

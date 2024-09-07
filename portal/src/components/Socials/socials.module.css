@@ -1,12 +1,11 @@
 .socialContainer {
-  background-image: url('../../assets/bgsocial.png');
+  background-image: url("../../assets/bgsocial.png");
   background-repeat: no-repeat;
   background-size: contain;
   display: grid;
   grid-template-columns: repeat(2, min-content);
   gap: 10px;
-  width: 960px;
-  max-width: 100%;
+  width: 100%;
   height: 378px;
   justify-content: space-around;
   align-content: space-evenly;
