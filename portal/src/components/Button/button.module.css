@@ -1,32 +1,20 @@
 
 .customButton {
   box-sizing: border-box; 
-  width: 92px;
-  height: 79px;
-  border-radius: 15px;
-  border: 3px solid rgba(253, 238, 183, 0.50);
-  background: rgba(250, 171, 167, 0.15);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 128px;
+  height: 40px; 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 10px;
+  gap: 0.5em;
   text-decoration: none;
-}
-
-.buttonImage {
-  max-width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-  max-height: 50px;
-  margin-bottom: 8px;
-}
-
-.buttonText {
-  font-size: clamp(11px, 2vw, 20px);
-  color: #B08A70;
-  text-align: center;
-  font-style: italic;
-font-weight: 600;
+  border-radius: 8px;
+border: 1px solid var(--color-pink, #D95876);
+background: var(--bg-light-orange, #FEF3ED);
+  color: var(--color-pink, #D95876);
+  
   
 }
+
+

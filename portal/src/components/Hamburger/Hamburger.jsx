@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import style from './hamburguer.module.css';
 import hambuguer from "../../assets/hamburguer.png";
 import female from '../../assets/female.png';
-import map from '../../assets/map.png';
+import mapa from '../../assets/mapa.svg';
 import fone from '../../assets/fone.png';
 import user from '../../assets/user.png';
 import home from '../../assets/home.png';
+import adress from "../../assets/Address.png"
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,19 +33,19 @@ const HamburgerMenu = () => {
             </Link>
           </li> 
           <li>
-            <Link to="/services">
+            <Link to="/Servicos">
               <img src={female} alt="Serviços" className={style.iconImage} />
               Serviços
             </Link>
           </li> 
           <li>
             <Link to="/Mapa">
-              <img src={map} alt="Mapa" className={style.iconImage} />
+              <img src={adress} alt="Mapa" className={style.iconImage} />
               Mapa
             </Link>
           </li>
           <li>
-            <Link to="/about">
+            <Link to="/sobre">
               <img src={user} alt="Sobre Nós" className={style.iconImage} />
               Sobre Nós
             </Link>
