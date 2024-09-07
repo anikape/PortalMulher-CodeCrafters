@@ -1,0 +1,35 @@
+
+.headerContainer {
+  background-image: url('../../assets/bgHeader.png');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.menu{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em; 
+  margin: 0 3em 0 3em;
+  width: 100%;
+}
+
+.coracao {
+ 
+  width: 44px;
+  height: 35px;
+}
+
+
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

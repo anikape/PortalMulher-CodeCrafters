@@ -1,6 +1,7 @@
 // MapWithDirections.js
 import React, { useState, useEffect } from "react";
 import { GoogleMap, useLoadScript, DirectionsRenderer } from "@react-google-maps/api";
+import style from "./mapWithDirections.module.css"
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -96,22 +97,24 @@ const MapWithDirections = ({ googleMapsApiKey }) => {
   if (!isLoaded) return "Carregando mapa...";
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div className={style.inputs}  style={{ height: "100vh" }}>
       <div>
-        <select value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}>
+        <select className={style.selects} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}>
+          <option value="Delegacia da Mulher">Selecione o serviço</option>
           <option value="Delegacia da Mulher">Delegacia da Mulher</option>
           <option value="Hospital mulher publico">Hospital da mulher</option>
           <option value="Apoio psicologico mulher publico">Apoio psicologico</option>
         </select>
 
-        <select onChange={(e) => setTravelMode(e.target.value)}>
+        <select className={style.selects} onChange={(e) => setTravelMode(e.target.value)}>
+          <option value="DRIVING">Selecione o meio de transporte</option>
           <option value="DRIVING">Carro</option>
           <option value="WALKING">A pé</option>
           <option value="BICYCLING">Bicicleta</option>
           <option value="TRANSIT">Transporte Público</option>
         </select>
 
-        <button onClick={searchNearby}>Buscar e Calcular Rota</button>
+        <button className={style.button} onClick={searchNearby}>Buscar e Calcular Rota</button>
       </div>
 
       <GoogleMap
