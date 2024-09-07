@@ -1,23 +1,21 @@
 /* src/components/HamburgerMenu.css */
 
 .hamburger-menu {
-display: flex;
-justify-content: space-between;
-
-
+  display: flex;
+  justify-content: space-between;
 }
 
+/* Ícone do menu está oculto por padrão e visível apenas em telas pequenas */
 .icon {
   font-size: 2rem;
   cursor: pointer;
-  display: none;
-  /* position: relative; */
+  display: none; /* Oculto por padrão */
   z-index: 1001;
   padding-right: 1rem;
 }
 
 .menu {
-  display: none;
+  display: none; /* Menu oculto por padrão */
   position: absolute;
   top: 50px;
   right: 0;
@@ -31,9 +29,9 @@ justify-content: space-between;
   flex-direction: column;
 }
 
+/* Menu visível quando a classe open é adicionada */
 .menu.open {
-  display: flex;
-  right: 0;
+  display: flex; /* Menu visível */
   border-top: 4px solid rgba(253, 238, 183, 0.45);
   border-left: 4px solid rgba(253, 238, 183, 0.45);
   border-bottom: 4px solid rgba(253, 238, 183, 0.45);
@@ -75,12 +73,14 @@ justify-content: space-between;
   height: auto;
 }
 
+/* Media Query para telas pequenas */
 @media (max-width: 390px) {
   .icon {
-    display: block;
+    display: block; /* Ícone visível em telas pequenas */
   }
 
-  nav.menu {
+  /* Certifica-se de que o menu ainda esteja oculto por padrão em telas pequenas */
+  .menu {
     display: none;
   }
 }
