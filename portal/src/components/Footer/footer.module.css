@@ -1,7 +1,8 @@
 .footerContainer{
-  background-image: url('../../assets/bgFooter.png');
-  width: 390px;
-  height: 64px;
+  background: #1E1E1E;
+  width: 960px;
+  max-width: 100%;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,22 +1,26 @@
 /* src/components/HamburgerMenu.css */
 
 .hamburger-menu {
-  position: relative;
+display: flex;
+justify-content: space-between;
+
+
 }
 
 .icon {
   font-size: 2rem;
   cursor: pointer;
   display: none;
-  position: relative;
+  /* position: relative; */
   z-index: 1001;
+  padding-right: 1rem;
 }
 
 .menu {
   display: none;
   position: absolute;
   top: 50px;
-  left: 0;
+  right: 0;
   background-color: #333;
   padding: 10px;
   z-index: 1000;
@@ -29,7 +33,7 @@
 
 .menu.open {
   display: flex;
-  left: 0;
+  right: 0;
   border-top: 4px solid rgba(253, 238, 183, 0.45);
   border-left: 4px solid rgba(253, 238, 183, 0.45);
   border-bottom: 4px solid rgba(253, 238, 183, 0.45);
