@@ -61,13 +61,14 @@
 }
 
 .h1 {
-  font-size: clamp(24px, 4vw, 32px);
-  font-family: Montserrat;
-  /* width: 80%; */
   color: #1e1e1e;
-  font-weight: 700;
-  line-height: 1.2;
   text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
 }
 
 .paragraph {
@@ -282,5 +283,15 @@
   }
   .mainServices {
     display: block;
+  }
+
+  .mainContent {
+    color: var(--dark-10, #1e1e1e);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }

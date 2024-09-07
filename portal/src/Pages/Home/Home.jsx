@@ -50,7 +50,7 @@ const Home = () => {
             </div>
             <div className={style.callToAction}>
               <h1 className={style.h1}>Bem-vinda</h1>
-              <p className={style.paragraph}>Explore Conosco</p>
+              <p className={style.paragraph}>Explore serviços perto de você</p>
               <div className={style.buttons}>
                 <CustomButton imgSrc={servico} text="Serviços" />
                 <CustomButton imgSrc={mapa} text="Mapa" to="/Mapa" />
