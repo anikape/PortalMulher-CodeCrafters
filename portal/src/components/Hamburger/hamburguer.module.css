@@ -84,7 +84,7 @@
   }
 }
 
-/* @media (min-width: 610px) {
+@media (min-width: 610px) {
   .icon {
     display: none;
   }
@@ -92,4 +92,4 @@
   .menu {
     display: none;
   }
-} */
+}

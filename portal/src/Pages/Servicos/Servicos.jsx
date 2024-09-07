@@ -31,7 +31,7 @@ const Servicos = () => {
 
         <Accordion />
 
-        <Help />
+        <Help  />
 
         <Sos />
       </main>

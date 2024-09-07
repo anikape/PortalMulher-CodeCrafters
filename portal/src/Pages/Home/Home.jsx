@@ -56,11 +56,11 @@ const Home = () => {
         <section className={style.find}>
           <h2 className={style.h2}>Aqui você encontra</h2>
           <Link to="/destino">
-            <img src={capacita} alt="Logo" />
+            <img src={capacita} alt="Informações sobre capacitação" />
           </Link>
 
           <Link to="/destino">
-            <img src={servicoSocial} alt="Logo" />
+            <img src={servicoSocial} alt="Informações sobre serviço social" />
           </Link>
         </section>
 
