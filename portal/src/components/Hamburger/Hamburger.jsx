@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about">
+            <Link to="/sobre">
               <img src={user} alt="Sobre Nós" className={style.iconImage} />
               Sobre Nós
             </Link>

@@ -50,7 +50,7 @@ const Sos = () => {
           className={style.fixedButton}
           ref={buttonRef}
         >
-          <img src={sos2} alt="Ligar para emergência" />
+          <img src={sos2} alt="Botão para Ligar para emergência 190" />
         </Link>
     </div>
   )
